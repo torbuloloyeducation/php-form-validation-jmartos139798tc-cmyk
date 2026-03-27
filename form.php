@@ -333,7 +333,6 @@ button[type="submit"]:hover {
         </div>
 
         <!-- Exercise 3: Add a Password Field with Confirmation --> 
-
         <div class="field-row">
             <label for="password">Password <span style="color:var(--error-red)">*</span></label>
             <input type="password" id="password" name="password"
@@ -400,9 +399,12 @@ button[type="submit"]:hover {
 
 <script>
 
+// Ignore form submission when page reloads
     if (window.history.replaceState) {
     window.history.replaceState(null, null, window.location.href);
 }
+
+// Show Password
 
 function togglePassword(inputId, checkbox) {
     const input = document.getElementById(inputId);
